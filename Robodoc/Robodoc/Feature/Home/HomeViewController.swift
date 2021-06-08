@@ -96,7 +96,7 @@ class HomeViewController: UIViewController {
                         return
                     }
                 }
-                self.addRobotChat(message: "Sorry, I have tried my best and didn't come up with a solution to that disease.")
+                self.addRobotChat(message: "Sorry, I have tried my best and didn't come up with a solution to that disease(\(stemmedUserMessage)).")
                 self.prepareForNewConsultation(message: self.failDisclaimerMessage)
             } else {
                 

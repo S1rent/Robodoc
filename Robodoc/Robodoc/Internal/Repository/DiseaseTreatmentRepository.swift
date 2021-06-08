@@ -25,6 +25,7 @@ class DiseaseTreatmentRepository {
         ("Gallstone", "The best way to deal with gallstone is to do cholesyctomy. Because medicine is not effective against gallstone."),
         ("KidneyStone", "Ureteroscopy, extracorporeal shock wave lithotripsy (ESWL), percutaneous nephrolithotomy. If still possible, you can consume medicines like Allopurinol, Diuretic, and others (Make sure to get the dosage from your local clinics or hospital)."),
         ("Covid", "Isolate yourself in about 2 weeks, drink waters, get enough rest, consume pain reliever to relieve the cough, fever and pain. If you didn't get any better make sure to do further checkup at the hospital."),
+        ("Corona", "Isolate yourself in about 2 weeks, drink waters, get enough rest, consume pain reliever to relieve the cough, fever and pain. If you didn't get any better make sure to do further checkup at the hospital."),
         ("Measle", "Your body can heal itself from measle, but in order to help in relieving the pain, you can consume lots of water, pain reliever and vitamin A."),
         ("Hiccup", "Consume warm water and honey, gargle, hold you breath for a moment, take a deep breath, consume fresh ginger, take a sip of a fresh lemon."),
         ("Dehydration", "Drink lots of water. You can also consume infused water, or diluted fruit juice. If you get dehydration because of Diarrhea, don't drink juice, milk, and all kinds of drink that contain caffeine and soda."),
@@ -98,6 +99,7 @@ class DiseaseTreatmentRepository {
         ("Wilson'sDisease", "Treatments aim to remove copper from the body. Those treatments include chelation therapy. After the copper is removed from the body, medicine containing zinc asetate is used to avoid a repeat of accumulation of copper.\nIf the damage to the liver is severe, the doctor might suggest to do a liver transplant."),
         ("Xanthelasma", "Xanthelasma isn't actually dangerous, but if it potentially gives rise to complications, the doctor may give treatment. Treatments are done to help remove the xanthelasma. However, it may come back if the patient's cholesterol level doesn't go down."),
         ("Xerophthalmia", "At the start of treatment, the doctor will give a supplement of vitamin A. Aside from the supplement, the patient will also need to eat food rich in vitamin A. If the cornea broke, the doctor will give antibiotics to prevent further infections."),
-        ("Xerosis", "In most cases, xerosis is treatable using a skin moisturizer. If it doesn't work, consult a doctor. The doctor will give corticosteroids and skin immunity cream.")
+        ("Xerosis", "In most cases, xerosis is treatable using a skin moisturizer. If it doesn't work, consult a doctor. The doctor will give corticosteroids and skin immunity cream."),
+        ("Sore Throat", "You should drink lots of water, consume soft food, don't talk too much, gargle with salt water, and if the sore throat is caused by bacteria, you should go to the doctor to get antibiotic medical treatment.")
     ]
 }
