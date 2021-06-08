@@ -41,21 +41,30 @@ class HomeViewController: UIViewController {
         self.keyboardField.layer.borderWidth = 2
         self.keyboardField.setLeftPaddingPoints(8)
         
+        self.addRobotChat(message: "*If you wish to reset the consultation, type reset")
         self.addRobotChat(message: "Hello there, do you already know what you suffer from ?")
     }
     
     @IBAction func sendButtonTapped(_ sender: Any) {
         if self.keyboardField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" { return }
-        let userMessage: String = self.keyboardField.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? "-"
+        let userMessage: String = self.keyboardField.text?.trimmingCharacters(in: .whitespacesAndNewlines).lowercased() ?? "-"
         self.addUserChat()
         
+        if userMessage == "reset" {
+            isOpeningQuestion = true
+            self.stackView.removeAllArrangedSubviews()
+            self.addRobotChat(message: "*If you wish to reset the conversation, type reset")
+            self.addRobotChat(message: "Hello there, do you already know what you suffer from ?")
+            return
+        }
+        
         if isOpeningQuestion {
-            if userMessage.lowercased().hasPrefix("y") {
-                self.isOpeningQuestion = false
-                self.addRobotChat(message: "Okay, what do you suffer from ?\nIf you have multiple disease, please write it one by one")
-            } else if userMessage.lowercased().hasPrefix("n") {
+            if userMessage.checkNegativeAnswer() {
                 self.isOpeningQuestion = false
                 self.addRobotChat(message: "Alright, can you describe what you feel ?\nPlease describe it one by one.")
+            } else if userMessage.checkPositiveAnswer() {
+                self.isOpeningQuestion = false
+                self.addRobotChat(message: "Okay, what do you suffer from ?")
             } else {
                 self.addRobotChat(message: "Sorry, i couldn't catch that, please answer correctly.")
             }
