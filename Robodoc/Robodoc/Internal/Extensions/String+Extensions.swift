@@ -8,9 +8,13 @@
 import Foundation
 
 extension String {
+    func stemmed() -> String {
+        return self
+    }
+    
     func checkNegativeAnswer() -> Bool {
         let possibleWord: [String] = [
-            "no", "don't", "do not", "negative", "not", "nay", "nope", "tidak", "dont know", "dont"
+            "n", "no", "don't", "do not", "negative", "not", "nay", "nope", "tidak", "dont know", "dont"
         ]
         
         for possible in possibleWord {
@@ -24,7 +28,7 @@ extension String {
     
     func checkPositiveAnswer() -> Bool {
         let possibleWord: [String] = [
-            "yes", "do", "positive", "affirmative", "yep", "ye", "iya", "ayay", "do know", "know"
+            "y", "yes", "do", "positive", "affirmative", "yep", "ye", "iya", "ayay", "do know", "know"
         ]
         for possible in possibleWord {
             if self.contains(possible) {

@@ -26,6 +26,7 @@
 		A1DAB4D0266F636E001D3AB8 /* RobotChatItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1DAB4CF266F636E001D3AB8 /* RobotChatItemView.xib */; };
 		A1DAB4E2266F6774001D3AB8 /* UserChatItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1DAB4E1266F6774001D3AB8 /* UserChatItemView.xib */; };
 		A1DAB4EA266F79E1001D3AB8 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DAB4E9266F79E1001D3AB8 /* String+Extensions.swift */; };
+		A1DAB4F0266F7F9A001D3AB8 /* DiseaseTreatmentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DAB4EF266F7F9A001D3AB8 /* DiseaseTreatmentRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		A1DAB4CF266F636E001D3AB8 /* RobotChatItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RobotChatItemView.xib; sourceTree = "<group>"; };
 		A1DAB4E1266F6774001D3AB8 /* UserChatItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserChatItemView.xib; sourceTree = "<group>"; };
 		A1DAB4E9266F79E1001D3AB8 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		A1DAB4EF266F7F9A001D3AB8 /* DiseaseTreatmentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiseaseTreatmentRepository.swift; sourceTree = "<group>"; };
 		ACED4EBEE015EE45F106BCF0 /* Pods-Robodoc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Robodoc.debug.xcconfig"; path = "Target Support Files/Pods-Robodoc/Pods-Robodoc.debug.xcconfig"; sourceTree = "<group>"; };
 		BC481B2411CC77367F983DDF /* Pods-RobodocTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RobodocTests.debug.xcconfig"; path = "Target Support Files/Pods-RobodocTests/Pods-RobodocTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D0A93FB62654D301E7333025 /* Pods-Robodoc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Robodoc.release.xcconfig"; path = "Target Support Files/Pods-Robodoc/Pods-Robodoc.release.xcconfig"; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 		A1DAB499266F5C4A001D3AB8 /* Internal */ = {
 			isa = PBXGroup;
 			children = (
+				A1DAB4EE266F7F8A001D3AB8 /* Repository */,
 				A1DAB4B2266F5F9E001D3AB8 /* Extensions */,
 			);
 			path = Internal;
@@ -238,6 +241,14 @@
 				A1DAB4E1266F6774001D3AB8 /* UserChatItemView.xib */,
 			);
 			path = UserChat;
+			sourceTree = "<group>";
+		};
+		A1DAB4EE266F7F8A001D3AB8 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				A1DAB4EF266F7F9A001D3AB8 /* DiseaseTreatmentRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -486,6 +497,7 @@
 				A1DAB43E266F5863001D3AB8 /* SceneDelegate.swift in Sources */,
 				A1DAB4EA266F79E1001D3AB8 /* String+Extensions.swift in Sources */,
 				A1DAB4BA266F60C4001D3AB8 /* UITextField+Extensions.swift in Sources */,
+				A1DAB4F0266F7F9A001D3AB8 /* DiseaseTreatmentRepository.swift in Sources */,
 				A1DAB4C3266F62F0001D3AB8 /* RobotChatItemView.swift in Sources */,
 				A1DAB49B266F5C55001D3AB8 /* UIStackView+Extensions.swift in Sources */,
 				A1DAB491266F5978001D3AB8 /* HomeViewController.swift in Sources */,

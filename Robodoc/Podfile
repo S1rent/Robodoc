@@ -9,6 +9,7 @@ target 'Robodoc' do
   pod 'IQKeyboardManagerSwift'
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'SnapKit', '~> 5.0.0'
 
   target 'RobodocTests' do
     inherit! :search_paths
