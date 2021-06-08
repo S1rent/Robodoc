@@ -67,6 +67,7 @@ class HomeViewController: UIViewController {
         
         if userMessage == "reset" {
             self.stackView.removeAllArrangedSubviews()
+            self.addRobotChat(message: "*If you wish to reset the consultation, type reset")
             reset()
             return
         }
