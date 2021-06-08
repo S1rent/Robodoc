@@ -1,0 +1,6 @@
+framework module Pods_Robodoc {
+  umbrella header "Pods-Robodoc-umbrella.h"
+
+  export *
+  module * { export * }
+}

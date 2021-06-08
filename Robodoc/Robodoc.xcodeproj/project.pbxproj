@@ -1,0 +1,835 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		156F2CB68590C9743DD57D7C /* Pods_RobodocTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2938BCF8C1E250BCA0623C61 /* Pods_RobodocTests.framework */; };
+		1759A99F276B7735FF97C52C /* Pods_Robodoc_RobodocUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2609842C7008B452D3874990 /* Pods_Robodoc_RobodocUITests.framework */; };
+		184A3F7390AD1EC2AF0E3B7E /* Pods_Robodoc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 401F4659046C6316EFB32B39 /* Pods_Robodoc.framework */; };
+		A1DAB43C266F5863001D3AB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DAB43B266F5863001D3AB8 /* AppDelegate.swift */; };
+		A1DAB43E266F5863001D3AB8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DAB43D266F5863001D3AB8 /* SceneDelegate.swift */; };
+		A1DAB446266F5863001D3AB8 /* Robodoc.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1DAB444266F5863001D3AB8 /* Robodoc.xcdatamodeld */; };
+		A1DAB448266F5864001D3AB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1DAB447266F5864001D3AB8 /* Assets.xcassets */; };
+		A1DAB44B266F5864001D3AB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1DAB449266F5864001D3AB8 /* LaunchScreen.storyboard */; };
+		A1DAB456266F5864001D3AB8 /* RobodocTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DAB455266F5864001D3AB8 /* RobodocTests.swift */; };
+		A1DAB461266F5864001D3AB8 /* RobodocUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DAB460266F5864001D3AB8 /* RobodocUITests.swift */; };
+		A1DAB491266F5978001D3AB8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DAB48F266F5978001D3AB8 /* HomeViewController.swift */; };
+		A1DAB492266F5978001D3AB8 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1DAB490266F5978001D3AB8 /* HomeViewController.xib */; };
+		A1DAB49B266F5C55001D3AB8 /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DAB49A266F5C55001D3AB8 /* UIStackView+Extensions.swift */; };
+		A1DAB4BA266F60C4001D3AB8 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DAB4B9266F60C4001D3AB8 /* UITextField+Extensions.swift */; };
+		A1DAB4C3266F62F0001D3AB8 /* RobotChatItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DAB4C2266F62F0001D3AB8 /* RobotChatItemView.swift */; };
+		A1DAB4CB266F62FC001D3AB8 /* UserChatItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DAB4CA266F62FC001D3AB8 /* UserChatItemView.swift */; };
+		A1DAB4D0266F636E001D3AB8 /* RobotChatItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1DAB4CF266F636E001D3AB8 /* RobotChatItemView.xib */; };
+		A1DAB4E2266F6774001D3AB8 /* UserChatItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1DAB4E1266F6774001D3AB8 /* UserChatItemView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1DAB452266F5864001D3AB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1DAB430266F5862001D3AB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1DAB437266F5863001D3AB8;
+			remoteInfo = Robodoc;
+		};
+		A1DAB45D266F5864001D3AB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1DAB430266F5862001D3AB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1DAB437266F5863001D3AB8;
+			remoteInfo = Robodoc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02D9F0A00106446BA42796FA /* Pods-Robodoc-RobodocUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Robodoc-RobodocUITests.release.xcconfig"; path = "Target Support Files/Pods-Robodoc-RobodocUITests/Pods-Robodoc-RobodocUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1E929A59667E0BD070B1BD18 /* Pods-RobodocTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RobodocTests.release.xcconfig"; path = "Target Support Files/Pods-RobodocTests/Pods-RobodocTests.release.xcconfig"; sourceTree = "<group>"; };
+		2609842C7008B452D3874990 /* Pods_Robodoc_RobodocUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Robodoc_RobodocUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2938BCF8C1E250BCA0623C61 /* Pods_RobodocTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RobodocTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		401F4659046C6316EFB32B39 /* Pods_Robodoc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Robodoc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78149C4E04EAA7DCD180599B /* Pods-Robodoc-RobodocUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Robodoc-RobodocUITests.debug.xcconfig"; path = "Target Support Files/Pods-Robodoc-RobodocUITests/Pods-Robodoc-RobodocUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A1DAB438266F5863001D3AB8 /* Robodoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Robodoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1DAB43B266F5863001D3AB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A1DAB43D266F5863001D3AB8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A1DAB445266F5863001D3AB8 /* Robodoc.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Robodoc.xcdatamodel; sourceTree = "<group>"; };
+		A1DAB447266F5864001D3AB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1DAB44A266F5864001D3AB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A1DAB44C266F5864001D3AB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1DAB451266F5864001D3AB8 /* RobodocTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RobodocTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1DAB455266F5864001D3AB8 /* RobodocTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobodocTests.swift; sourceTree = "<group>"; };
+		A1DAB457266F5864001D3AB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1DAB45C266F5864001D3AB8 /* RobodocUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RobodocUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1DAB460266F5864001D3AB8 /* RobodocUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobodocUITests.swift; sourceTree = "<group>"; };
+		A1DAB462266F5864001D3AB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1DAB48F266F5978001D3AB8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A1DAB490266F5978001D3AB8 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		A1DAB49A266F5C55001D3AB8 /* UIStackView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extensions.swift"; sourceTree = "<group>"; };
+		A1DAB4B9266F60C4001D3AB8 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
+		A1DAB4C2266F62F0001D3AB8 /* RobotChatItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotChatItemView.swift; sourceTree = "<group>"; };
+		A1DAB4CA266F62FC001D3AB8 /* UserChatItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserChatItemView.swift; sourceTree = "<group>"; };
+		A1DAB4CF266F636E001D3AB8 /* RobotChatItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RobotChatItemView.xib; sourceTree = "<group>"; };
+		A1DAB4E1266F6774001D3AB8 /* UserChatItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserChatItemView.xib; sourceTree = "<group>"; };
+		ACED4EBEE015EE45F106BCF0 /* Pods-Robodoc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Robodoc.debug.xcconfig"; path = "Target Support Files/Pods-Robodoc/Pods-Robodoc.debug.xcconfig"; sourceTree = "<group>"; };
+		BC481B2411CC77367F983DDF /* Pods-RobodocTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RobodocTests.debug.xcconfig"; path = "Target Support Files/Pods-RobodocTests/Pods-RobodocTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D0A93FB62654D301E7333025 /* Pods-Robodoc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Robodoc.release.xcconfig"; path = "Target Support Files/Pods-Robodoc/Pods-Robodoc.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1DAB435266F5863001D3AB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				184A3F7390AD1EC2AF0E3B7E /* Pods_Robodoc.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1DAB44E266F5864001D3AB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				156F2CB68590C9743DD57D7C /* Pods_RobodocTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1DAB459266F5864001D3AB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1759A99F276B7735FF97C52C /* Pods_Robodoc_RobodocUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FCD2D408430A50F6BB44467 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				401F4659046C6316EFB32B39 /* Pods_Robodoc.framework */,
+				2609842C7008B452D3874990 /* Pods_Robodoc_RobodocUITests.framework */,
+				2938BCF8C1E250BCA0623C61 /* Pods_RobodocTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		890CAF16848EF3D78B2239CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ACED4EBEE015EE45F106BCF0 /* Pods-Robodoc.debug.xcconfig */,
+				D0A93FB62654D301E7333025 /* Pods-Robodoc.release.xcconfig */,
+				78149C4E04EAA7DCD180599B /* Pods-Robodoc-RobodocUITests.debug.xcconfig */,
+				02D9F0A00106446BA42796FA /* Pods-Robodoc-RobodocUITests.release.xcconfig */,
+				BC481B2411CC77367F983DDF /* Pods-RobodocTests.debug.xcconfig */,
+				1E929A59667E0BD070B1BD18 /* Pods-RobodocTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A1DAB42F266F5862001D3AB8 = {
+			isa = PBXGroup;
+			children = (
+				A1DAB43A266F5863001D3AB8 /* Robodoc */,
+				A1DAB454266F5864001D3AB8 /* RobodocTests */,
+				A1DAB45F266F5864001D3AB8 /* RobodocUITests */,
+				A1DAB439266F5863001D3AB8 /* Products */,
+				890CAF16848EF3D78B2239CD /* Pods */,
+				0FCD2D408430A50F6BB44467 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A1DAB439266F5863001D3AB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1DAB438266F5863001D3AB8 /* Robodoc.app */,
+				A1DAB451266F5864001D3AB8 /* RobodocTests.xctest */,
+				A1DAB45C266F5864001D3AB8 /* RobodocUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1DAB43A266F5863001D3AB8 /* Robodoc */ = {
+			isa = PBXGroup;
+			children = (
+				A1DAB48D266F595F001D3AB8 /* Feature */,
+				A1DAB499266F5C4A001D3AB8 /* Internal */,
+				A1DAB43B266F5863001D3AB8 /* AppDelegate.swift */,
+				A1DAB43D266F5863001D3AB8 /* SceneDelegate.swift */,
+				A1DAB447266F5864001D3AB8 /* Assets.xcassets */,
+				A1DAB449266F5864001D3AB8 /* LaunchScreen.storyboard */,
+				A1DAB44C266F5864001D3AB8 /* Info.plist */,
+				A1DAB444266F5863001D3AB8 /* Robodoc.xcdatamodeld */,
+			);
+			path = Robodoc;
+			sourceTree = "<group>";
+		};
+		A1DAB454266F5864001D3AB8 /* RobodocTests */ = {
+			isa = PBXGroup;
+			children = (
+				A1DAB455266F5864001D3AB8 /* RobodocTests.swift */,
+				A1DAB457266F5864001D3AB8 /* Info.plist */,
+			);
+			path = RobodocTests;
+			sourceTree = "<group>";
+		};
+		A1DAB45F266F5864001D3AB8 /* RobodocUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A1DAB460266F5864001D3AB8 /* RobodocUITests.swift */,
+				A1DAB462266F5864001D3AB8 /* Info.plist */,
+			);
+			path = RobodocUITests;
+			sourceTree = "<group>";
+		};
+		A1DAB48D266F595F001D3AB8 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				A1DAB48E266F5962001D3AB8 /* Home */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		A1DAB48E266F5962001D3AB8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A1DAB4D7266F637C001D3AB8 /* UserChat */,
+				A1DAB4C1266F62B7001D3AB8 /* RobotChat */,
+				A1DAB48F266F5978001D3AB8 /* HomeViewController.swift */,
+				A1DAB490266F5978001D3AB8 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A1DAB499266F5C4A001D3AB8 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				A1DAB4B2266F5F9E001D3AB8 /* Extensions */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		A1DAB4B2266F5F9E001D3AB8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A1DAB49A266F5C55001D3AB8 /* UIStackView+Extensions.swift */,
+				A1DAB4B9266F60C4001D3AB8 /* UITextField+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A1DAB4C1266F62B7001D3AB8 /* RobotChat */ = {
+			isa = PBXGroup;
+			children = (
+				A1DAB4C2266F62F0001D3AB8 /* RobotChatItemView.swift */,
+				A1DAB4CF266F636E001D3AB8 /* RobotChatItemView.xib */,
+			);
+			path = RobotChat;
+			sourceTree = "<group>";
+		};
+		A1DAB4D7266F637C001D3AB8 /* UserChat */ = {
+			isa = PBXGroup;
+			children = (
+				A1DAB4CA266F62FC001D3AB8 /* UserChatItemView.swift */,
+				A1DAB4E1266F6774001D3AB8 /* UserChatItemView.xib */,
+			);
+			path = UserChat;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1DAB437266F5863001D3AB8 /* Robodoc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1DAB465266F5864001D3AB8 /* Build configuration list for PBXNativeTarget "Robodoc" */;
+			buildPhases = (
+				5A5413294EFDC47A1DBEF9BC /* [CP] Check Pods Manifest.lock */,
+				A1DAB434266F5863001D3AB8 /* Sources */,
+				A1DAB435266F5863001D3AB8 /* Frameworks */,
+				A1DAB436266F5863001D3AB8 /* Resources */,
+				9D63A53556277152B9FD2881 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Robodoc;
+			productName = Robodoc;
+			productReference = A1DAB438266F5863001D3AB8 /* Robodoc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1DAB450266F5864001D3AB8 /* RobodocTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1DAB468266F5864001D3AB8 /* Build configuration list for PBXNativeTarget "RobodocTests" */;
+			buildPhases = (
+				A037B81B8C9A3F607507DBB8 /* [CP] Check Pods Manifest.lock */,
+				A1DAB44D266F5864001D3AB8 /* Sources */,
+				A1DAB44E266F5864001D3AB8 /* Frameworks */,
+				A1DAB44F266F5864001D3AB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1DAB453266F5864001D3AB8 /* PBXTargetDependency */,
+			);
+			name = RobodocTests;
+			productName = RobodocTests;
+			productReference = A1DAB451266F5864001D3AB8 /* RobodocTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A1DAB45B266F5864001D3AB8 /* RobodocUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1DAB46B266F5864001D3AB8 /* Build configuration list for PBXNativeTarget "RobodocUITests" */;
+			buildPhases = (
+				55DBCA1D1F398313CF3BD1D9 /* [CP] Check Pods Manifest.lock */,
+				A1DAB458266F5864001D3AB8 /* Sources */,
+				A1DAB459266F5864001D3AB8 /* Frameworks */,
+				A1DAB45A266F5864001D3AB8 /* Resources */,
+				193ACB3B0946B113A7CA8E26 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1DAB45E266F5864001D3AB8 /* PBXTargetDependency */,
+			);
+			name = RobodocUITests;
+			productName = RobodocUITests;
+			productReference = A1DAB45C266F5864001D3AB8 /* RobodocUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1DAB430266F5862001D3AB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					A1DAB437266F5863001D3AB8 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					A1DAB450266F5864001D3AB8 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = A1DAB437266F5863001D3AB8;
+					};
+					A1DAB45B266F5864001D3AB8 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = A1DAB437266F5863001D3AB8;
+					};
+				};
+			};
+			buildConfigurationList = A1DAB433266F5862001D3AB8 /* Build configuration list for PBXProject "Robodoc" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1DAB42F266F5862001D3AB8;
+			productRefGroup = A1DAB439266F5863001D3AB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1DAB437266F5863001D3AB8 /* Robodoc */,
+				A1DAB450266F5864001D3AB8 /* RobodocTests */,
+				A1DAB45B266F5864001D3AB8 /* RobodocUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1DAB436266F5863001D3AB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1DAB4E2266F6774001D3AB8 /* UserChatItemView.xib in Resources */,
+				A1DAB44B266F5864001D3AB8 /* LaunchScreen.storyboard in Resources */,
+				A1DAB448266F5864001D3AB8 /* Assets.xcassets in Resources */,
+				A1DAB4D0266F636E001D3AB8 /* RobotChatItemView.xib in Resources */,
+				A1DAB492266F5978001D3AB8 /* HomeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1DAB44F266F5864001D3AB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1DAB45A266F5864001D3AB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		193ACB3B0946B113A7CA8E26 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Robodoc-RobodocUITests/Pods-Robodoc-RobodocUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Robodoc-RobodocUITests/Pods-Robodoc-RobodocUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Robodoc-RobodocUITests/Pods-Robodoc-RobodocUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55DBCA1D1F398313CF3BD1D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Robodoc-RobodocUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A5413294EFDC47A1DBEF9BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Robodoc-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D63A53556277152B9FD2881 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Robodoc/Pods-Robodoc-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Robodoc/Pods-Robodoc-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Robodoc/Pods-Robodoc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A037B81B8C9A3F607507DBB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RobodocTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1DAB434266F5863001D3AB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1DAB446266F5863001D3AB8 /* Robodoc.xcdatamodeld in Sources */,
+				A1DAB43C266F5863001D3AB8 /* AppDelegate.swift in Sources */,
+				A1DAB4CB266F62FC001D3AB8 /* UserChatItemView.swift in Sources */,
+				A1DAB43E266F5863001D3AB8 /* SceneDelegate.swift in Sources */,
+				A1DAB4BA266F60C4001D3AB8 /* UITextField+Extensions.swift in Sources */,
+				A1DAB4C3266F62F0001D3AB8 /* RobotChatItemView.swift in Sources */,
+				A1DAB49B266F5C55001D3AB8 /* UIStackView+Extensions.swift in Sources */,
+				A1DAB491266F5978001D3AB8 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1DAB44D266F5864001D3AB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1DAB456266F5864001D3AB8 /* RobodocTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1DAB458266F5864001D3AB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1DAB461266F5864001D3AB8 /* RobodocUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A1DAB453266F5864001D3AB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1DAB437266F5863001D3AB8 /* Robodoc */;
+			targetProxy = A1DAB452266F5864001D3AB8 /* PBXContainerItemProxy */;
+		};
+		A1DAB45E266F5864001D3AB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1DAB437266F5863001D3AB8 /* Robodoc */;
+			targetProxy = A1DAB45D266F5864001D3AB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A1DAB449266F5864001D3AB8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1DAB44A266F5864001D3AB8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A1DAB463266F5864001D3AB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1DAB464266F5864001D3AB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1DAB466266F5864001D3AB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACED4EBEE015EE45F106BCF0 /* Pods-Robodoc.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KFYJQYMB2X;
+				INFOPLIST_FILE = Robodoc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Robodoc.Robodoc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A1DAB467266F5864001D3AB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0A93FB62654D301E7333025 /* Pods-Robodoc.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KFYJQYMB2X;
+				INFOPLIST_FILE = Robodoc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Robodoc.Robodoc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A1DAB469266F5864001D3AB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC481B2411CC77367F983DDF /* Pods-RobodocTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KFYJQYMB2X;
+				INFOPLIST_FILE = RobodocTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Robodoc.RobodocTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Robodoc.app/Robodoc";
+			};
+			name = Debug;
+		};
+		A1DAB46A266F5864001D3AB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E929A59667E0BD070B1BD18 /* Pods-RobodocTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KFYJQYMB2X;
+				INFOPLIST_FILE = RobodocTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Robodoc.RobodocTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Robodoc.app/Robodoc";
+			};
+			name = Release;
+		};
+		A1DAB46C266F5864001D3AB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78149C4E04EAA7DCD180599B /* Pods-Robodoc-RobodocUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KFYJQYMB2X;
+				INFOPLIST_FILE = RobodocUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Robodoc.RobodocUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Robodoc;
+			};
+			name = Debug;
+		};
+		A1DAB46D266F5864001D3AB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02D9F0A00106446BA42796FA /* Pods-Robodoc-RobodocUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KFYJQYMB2X;
+				INFOPLIST_FILE = RobodocUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Robodoc.RobodocUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Robodoc;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1DAB433266F5862001D3AB8 /* Build configuration list for PBXProject "Robodoc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1DAB463266F5864001D3AB8 /* Debug */,
+				A1DAB464266F5864001D3AB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1DAB465266F5864001D3AB8 /* Build configuration list for PBXNativeTarget "Robodoc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1DAB466266F5864001D3AB8 /* Debug */,
+				A1DAB467266F5864001D3AB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1DAB468266F5864001D3AB8 /* Build configuration list for PBXNativeTarget "RobodocTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1DAB469266F5864001D3AB8 /* Debug */,
+				A1DAB46A266F5864001D3AB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1DAB46B266F5864001D3AB8 /* Build configuration list for PBXNativeTarget "RobodocUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1DAB46C266F5864001D3AB8 /* Debug */,
+				A1DAB46D266F5864001D3AB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A1DAB444266F5863001D3AB8 /* Robodoc.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A1DAB445266F5863001D3AB8 /* Robodoc.xcdatamodel */,
+			);
+			currentVersion = A1DAB445266F5863001D3AB8 /* Robodoc.xcdatamodel */;
+			path = Robodoc.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A1DAB430266F5862001D3AB8 /* Project object */;
+}
