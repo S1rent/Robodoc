@@ -10,6 +10,7 @@
 		156F2CB68590C9743DD57D7C /* Pods_RobodocTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2938BCF8C1E250BCA0623C61 /* Pods_RobodocTests.framework */; };
 		1759A99F276B7735FF97C52C /* Pods_Robodoc_RobodocUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2609842C7008B452D3874990 /* Pods_Robodoc_RobodocUITests.framework */; };
 		184A3F7390AD1EC2AF0E3B7E /* Pods_Robodoc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 401F4659046C6316EFB32B39 /* Pods_Robodoc.framework */; };
+		A1CF8E3D26706E57008D4146 /* DiseasePredictionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CF8E3C26706E57008D4146 /* DiseasePredictionRepository.swift */; };
 		A1DAB43C266F5863001D3AB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DAB43B266F5863001D3AB8 /* AppDelegate.swift */; };
 		A1DAB43E266F5863001D3AB8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DAB43D266F5863001D3AB8 /* SceneDelegate.swift */; };
 		A1DAB446266F5863001D3AB8 /* Robodoc.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1DAB444266F5863001D3AB8 /* Robodoc.xcdatamodeld */; };
@@ -53,6 +54,7 @@
 		2938BCF8C1E250BCA0623C61 /* Pods_RobodocTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RobodocTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		401F4659046C6316EFB32B39 /* Pods_Robodoc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Robodoc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78149C4E04EAA7DCD180599B /* Pods-Robodoc-RobodocUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Robodoc-RobodocUITests.debug.xcconfig"; path = "Target Support Files/Pods-Robodoc-RobodocUITests/Pods-Robodoc-RobodocUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A1CF8E3C26706E57008D4146 /* DiseasePredictionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiseasePredictionRepository.swift; sourceTree = "<group>"; };
 		A1DAB438266F5863001D3AB8 /* Robodoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Robodoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DAB43B266F5863001D3AB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1DAB43D266F5863001D3AB8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				A1DAB4EF266F7F9A001D3AB8 /* DiseaseTreatmentRepository.swift */,
+				A1CF8E3C26706E57008D4146 /* DiseasePredictionRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -495,6 +498,7 @@
 				A1DAB43C266F5863001D3AB8 /* AppDelegate.swift in Sources */,
 				A1DAB4CB266F62FC001D3AB8 /* UserChatItemView.swift in Sources */,
 				A1DAB43E266F5863001D3AB8 /* SceneDelegate.swift in Sources */,
+				A1CF8E3D26706E57008D4146 /* DiseasePredictionRepository.swift in Sources */,
 				A1DAB4EA266F79E1001D3AB8 /* String+Extensions.swift in Sources */,
 				A1DAB4BA266F60C4001D3AB8 /* UITextField+Extensions.swift in Sources */,
 				A1DAB4F0266F7F9A001D3AB8 /* DiseaseTreatmentRepository.swift in Sources */,
