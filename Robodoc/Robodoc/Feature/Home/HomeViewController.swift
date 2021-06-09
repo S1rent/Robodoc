@@ -133,6 +133,21 @@ class HomeViewController: UIViewController {
                             }
                         }
                     }
+                    
+                    if self.userDiseasePrediction.count == 1 {
+                        self.addRobotChat(message: "According to my analysis, you have been potentially suffered from \(userDiseasePrediction.first ?? "").")
+                        
+                        let treatmenRepo = DiseaseTreatmentRepository.shared.db
+                        for diseaseInfo in treatmenRepo {
+                            guard let firstItem = userDiseasePrediction.first else { return }
+                            if firstItem.lowercased().contains(diseaseInfo.0.lowercased()) {
+                                self.addRobotChat(message: "The suggested treatment for \(firstItem) is\n\(diseaseInfo.1)")
+                                self.prepareForNewConsultation(message: self.disclaimerMessage)
+                                return
+                            }
+                        }
+                    }
+                    
                 } else {
                     var newPrediction: Set<String> = []
                     for item in repository {
@@ -162,9 +177,8 @@ class HomeViewController: UIViewController {
                         }
                     }
                     self.userDiseasePrediction = updatedDisease
-                    
                     if self.userDiseasePrediction.count == 1 {
-                        self.addRobotChat(message: "According to my analysis, you have been suffered from \(userDiseasePrediction.first ?? "").")
+                        self.addRobotChat(message: "According to my analysis, you have been potentially suffered from \(userDiseasePrediction.first ?? "").")
                         
                         let treatmenRepo = DiseaseTreatmentRepository.shared.db
                         for diseaseInfo in treatmenRepo {
@@ -191,7 +205,7 @@ class HomeViewController: UIViewController {
                 }
                 
                 if self.userDiseasePrediction.count != 0 {
-                    self.addRobotChat(message: "According to my analysis, you have been suffered from either one of these disease \(possibleSymtomps).\nYou can tell me more about the symtomps you felt to make the analysis better.")
+                    self.addRobotChat(message: "According to my analysis, you have been potentially suffered from either one of these disease\n\n\(possibleSymtomps).\n\nYou can tell me more about the symtomps you felt to make the analysis better.")
                     self.addRobotChat(message: "If you feel that you have suffered from one of those disease, you can type the disease and i will give recommend you a treatment.")
                 } else {
                     self.prepareForNewConsultation(message: "Sorry, I have tried my best and didn't know the disease you have.\nI recommend you to go to the hospital.")
@@ -210,6 +224,7 @@ class HomeViewController: UIViewController {
     }
     
     func reset() {
+        self.userDiseasePrediction = []
         isOpeningQuestion = true
         self.addRobotChat(message: "Hello there, do you already know what you suffer from ?")
     }
