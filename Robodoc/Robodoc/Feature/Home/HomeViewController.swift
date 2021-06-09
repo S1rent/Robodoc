@@ -22,6 +22,8 @@ class HomeViewController: UIViewController {
     var isOpeningQuestion = true
     var isUserKnowTheDisease = false
     
+    var userDiseasePrediction: Set<String> = []
+    
     let disclaimerMessage = """
     *Please note that I could be wrong, to be 100% sure you must do a proper consultation with the professional.\n\n
     If the disease only gets worse, or you haven't been cured, you MUST get proper treatment from the hospital.
@@ -99,13 +101,107 @@ class HomeViewController: UIViewController {
                 self.addRobotChat(message: "Sorry, I have tried my best and didn't come up with a solution to that disease(\(stemmedUserMessage)).")
                 self.prepareForNewConsultation(message: self.failDisclaimerMessage)
             } else {
+                let stemmedUserMessage = userMessage.stemmed(withoutSeparator: false)
+                let stemmedUserWithSeparator = userMessage.stemmed()
                 
+                let repository = DiseasePredictionRepository.shared.db
+                let rep = DiseaseTreatmentRepository.shared.db
+                
+                if self.userDiseasePrediction.contains(stemmedUserWithSeparator) {
+                    for diseaseInfo in rep {
+                        if stemmedUserWithSeparator.contains(diseaseInfo.0.lowercased()) {
+                            self.addRobotChat(message: "The suggested treatment for \(stemmedUserWithSeparator) is\n\(diseaseInfo.1)")
+                            self.prepareForNewConsultation(message: self.disclaimerMessage)
+                            return
+                        }
+                    }
+                }
+                
+                if self.userDiseasePrediction.count == 0 {
+                    for item in repository {
+                        let symtoms = item.1.stemmed(withoutSeparator: false)
+                        let disease = item.0
+                        
+                        let splitSymtoms = symtoms.split(separator: " ")
+                        let splitMessage = stemmedUserMessage.split(separator: " ")
+                        for wSymptoms in splitSymtoms {
+                            for wMessage in splitMessage {
+                                if(wSymptoms.lowercased() == wMessage.lowercased())
+                                {
+                                    self.userDiseasePrediction.insert(disease)
+                                }
+                            }
+                        }
+                    }
+                } else {
+                    var newPrediction: Set<String> = []
+                    for item in repository {
+                        let symtoms = item.1.stemmed(withoutSeparator: false)
+                        let disease = item.0
+                        
+                        let splitSymtoms = symtoms.split(separator: " ")
+                        let splitMessage = stemmedUserMessage.split(separator: " ")
+                        for wSymptoms in splitSymtoms {
+                            for wMessage in splitMessage {
+                                if(wSymptoms.lowercased() == wMessage.lowercased())
+                                {
+                                    newPrediction.insert(disease)
+                                }
+                            }
+                        }
+                    }
+                    
+                    var updatedDisease: Set<String> = []
+                    
+                    for oldDisease in self.userDiseasePrediction {
+                        if newPrediction.contains(oldDisease) {
+                            if oldDisease.lowercased() == "corona" && updatedDisease.contains("Covid") {
+                            } else {
+                                updatedDisease.insert(oldDisease)
+                            }
+                        }
+                    }
+                    self.userDiseasePrediction = updatedDisease
+                    
+                    if self.userDiseasePrediction.count == 1 {
+                        self.addRobotChat(message: "According to my analysis, you have been suffered from \(userDiseasePrediction.first ?? "").")
+                        
+                        let treatmenRepo = DiseaseTreatmentRepository.shared.db
+                        for diseaseInfo in treatmenRepo {
+                            guard let firstItem = userDiseasePrediction.first else { return }
+                            if firstItem.lowercased().contains(diseaseInfo.0.lowercased()) {
+                                self.addRobotChat(message: "The suggested treatment for \(firstItem) is\n\(diseaseInfo.1)")
+                                self.prepareForNewConsultation(message: self.disclaimerMessage)
+                                return
+                            }
+                        }
+                        
+                        
+                        self.prepareForNewConsultation(message: self.disclaimerMessage)
+                        return
+                    }
+                }
+                
+                var possibleSymtomps = ""
+                for (index, disease) in self.userDiseasePrediction.enumerated() {
+                    possibleSymtomps += disease
+                    if index != self.userDiseasePrediction.count - 1 {
+                        possibleSymtomps += ", "
+                    }
+                }
+                
+                if self.userDiseasePrediction.count != 0 {
+                    self.addRobotChat(message: "According to my analysis, you have been suffered from either one of these disease \(possibleSymtomps).\nYou can tell me more about the symtomps you felt to make the analysis better.")
+                    self.addRobotChat(message: "If you feel that you have suffered from one of those disease, you can type the disease and i will give recommend you a treatment.")
+                } else {
+                    self.prepareForNewConsultation(message: "Sorry, I have tried my best and didn't know the disease you have.\nI recommend you to go to the hospital.")
+                }
             }
         }
     }
     
     func prepareForNewConsultation(message: String) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: { [weak self] in
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: { [weak self] in
             guard let self = self else { return }
             
             self.addRobotChat(message: message, true)
@@ -119,7 +215,7 @@ class HomeViewController: UIViewController {
     }
     
     func addRobotChat(message: String, _ isEnd: Bool = false) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: { [weak self] in
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: { [weak self] in
             guard let self = self else { return }
             
             let robotView = RobotChatItemView()

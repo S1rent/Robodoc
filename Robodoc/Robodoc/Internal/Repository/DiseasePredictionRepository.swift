@@ -8,6 +8,9 @@
 import Foundation
 
 class DiseasePredictionRepository {
+    public static let shared = DiseasePredictionRepository()
+    private init() { }
+    
     let db: [(String, String)] = [
         ("Acute kidney injury", "Decreased amount and frequency of urine"),
         ("Acute kidney injury"," Swelling of the legs due to fluid buildup"),
@@ -500,6 +503,7 @@ class DiseasePredictionRepository {
         ("Covid", "Cough"),
         ("Covid", "Blown"),
         ("Covid", "Hard Breath"),
+        ("Covid", "Hard Breathe"),
         ("Covid", "Tired"),
         ("Covid", "Chest Pain"),
         ("Covid", "Sore Throat"),
