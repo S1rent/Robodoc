@@ -107,7 +107,12 @@ class HomeViewController: UIViewController {
                 let repository = DiseasePredictionRepository.shared.db
                 let rep = DiseaseTreatmentRepository.shared.db
                 
-                if self.userDiseasePrediction.contains(stemmedUserWithSeparator) {
+                var tmp: Set<String> = []
+                for it in self.userDiseasePrediction {
+                    tmp.insert(it.lowercased())
+                }
+                
+                if tmp.contains(stemmedUserMessage.trimmingCharacters(in: .whitespacesAndNewlines)) {
                     for diseaseInfo in rep {
                         if stemmedUserWithSeparator.contains(diseaseInfo.0.lowercased()) {
                             self.addRobotChat(message: "The suggested treatment for \(stemmedUserWithSeparator) is\n\(diseaseInfo.1)")
