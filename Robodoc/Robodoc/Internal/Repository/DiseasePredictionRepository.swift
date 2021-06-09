@@ -646,5 +646,11 @@ class DiseasePredictionRepository {
         ("Pharyngitis", "Puke"),
         ("Pharyngitis", "Gag"),
         ("Pharyngitis", "Vomit"),
+        ("Sore Throat", "Painfull Throat"),
+        ("Sore Throat", "Pain Swallow"),
+        ("Sore Throat", "Fever"),
+        ("Sore Throat", "Hard To Swallow"),
+        ("Sore Throat", "Pain when Voice"),
+        ("Sore Throat", "Sore Throat"),
     ]
 }
