@@ -41,7 +41,7 @@ extension String {
     
     func checkNegativeAnswer() -> Bool {
         let possibleWord: [String] = [
-            "n", "no", "don't", "do not", "negative", "not", "nay", "nope", "tidak", "dont know", "dont"
+            "no", "don't", "do not", "negative", "not", "nay", "nope", "tidak", "dont know", "dont"
         ]
         let splitWord = self.split(separator: " ")
         for possible in possibleWord {
@@ -55,7 +55,7 @@ extension String {
     
     func checkPositiveAnswer() -> Bool {
         let possibleWord: [String] = [
-            "y", "yes", "do", "positive", "affirmative", "yep", "ye", "iya", "ayay", "do know", "know"
+            "yes", "do", "positive", "affirmative", "yep", "ye", "iya", "ayay", "do know", "know"
         ]
         for possible in possibleWord {
             if self.contains(possible) {

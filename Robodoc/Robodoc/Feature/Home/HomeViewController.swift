@@ -253,6 +253,11 @@ class HomeViewController: UIViewController {
                 }
             }
         })
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.7, execute: { [weak self] in
+            guard let self = self else { return }
+            
+            self.scrollToBottom()
+        })
     }
     
     func addUserChat() {
@@ -261,5 +266,13 @@ class HomeViewController: UIViewController {
         self.stackView.addArrangedSubview(userView)
 
         self.keyboardField.text = ""
+        self.scrollToBottom()
+    }
+    
+    func scrollToBottom() {
+        let bottomOffset = CGPoint(x: 0, y: scrollView.contentSize.height - scrollView.bounds.size.height)
+        if scrollView.contentSize.height - scrollView.bounds.size.height > 0 {
+            scrollView.setContentOffset(bottomOffset, animated: true)
+        }
     }
 }
